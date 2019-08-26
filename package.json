@@ -4,7 +4,8 @@
   "description": "leetcode",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./test"
+    "test": "jest ./test",
+    "tsc": "tsc -watch"
   },
   "repository": {
     "type": "git",
