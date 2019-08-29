@@ -1,7 +1,6 @@
-"use strict";
-// import prime  from './array/prime';
-var prime = require('./array/prime');
-var result = prime(100);
-console.log(result);
-console.log('asdasdasd');
-//# sourceMappingURL=main.js.map
+parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"hbwB":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var t=function(){function t(){this.total=0,this.primeArr=[],this.el='  <button type="button" class="btn btn-outline-secondary btn-sm"></button>',this.getInput(),this.getPrimeNumbers(),this.clean()}return t.prototype.getPrimeNumbers=function(){for(var t=2;t<=this.total;t++){for(var e=!1,r=2;r<=t-1;r++)if(t%r==0){e=!0;break}0==e&&this.primeArr.push(t)}},t.prototype.clean=function(){$("#primeClean").on("click",function(){$("#prime-container").empty()})},t.prototype.getInput=function(){var t=this,e=this;$("#primeBtn").on("click",function(){var r=$("#primeBtnInput").val();t.total=parseInt(r),e.getPrimeNumbers(),e.createContainer()})},t.prototype.createContainer=function(){var t=this,e=$("#prime-container");$("#prime-container").children().remove(),this.primeArr.map(function(r){$(t.el).clone().appendTo(e).text(r)})},t}();exports.PrimeModel=t;
+},{}],"ZCfc":[function(require,module,exports) {
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0});var e=require("./page/prime.model"),r=new e.PrimeModel;console.log(r.getPrimeNumbers());
+},{"./page/prime.model":"hbwB"}]},{},["ZCfc"], null)
+//# sourceMappingURL=/main.js.map
