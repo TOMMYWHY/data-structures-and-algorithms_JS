@@ -18,3 +18,4 @@ function arrayPrimes(total: number) {
 
 
 export default arrayPrimes;
+

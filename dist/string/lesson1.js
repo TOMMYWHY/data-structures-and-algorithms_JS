@@ -10,3 +10,8 @@ exports.default = (function (str) {
         return item.split('').reverse().join('');
     }).join(' ');
 });
+/**
+ * 557. Reverse Words in a String III
+ * https://leetcode.com/problems/reverse-words-in-a-string-iii/
+ */ 
+//# sourceMappingURL=lesson1.js.map
