@@ -23,22 +23,27 @@ export class PrimeModel {
             }
         }
     };
-    clean(){ $("#primeClean").on('click', () => {
-        $('#prime-container').empty();
-    })}
+    clean() {
+        $("#primeClean").on('click', () => {
+            $('#prime-container').empty();
+        })
+    }
     getInput() {
         let _that = this;
         $("#primeBtn").on('click', () => {
+            console.log(1);
+            $('#prime-container').empty();
+            console.log(2);
             let num: any = $('#primeBtnInput').val()
             this.total = parseInt(num);
             _that.getPrimeNumbers();
             _that.createContainer();
-
         })
     };
     createContainer() {
         let $container = $('#prime-container');
-        $('#prime-container').children().remove();
+        // $('#prime-container').children().remove();
+        // $('#prime-container').children().remove();
         this.primeArr.map(item => {
             $(this.el).clone().appendTo($container).text(item);
         })

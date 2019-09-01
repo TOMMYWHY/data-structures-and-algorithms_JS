@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest ./test",
     "tsc": "tsc -watch",
-    "build":" parcel build code/main.ts"
+    "build": " parcel build code/main.ts"
   },
   "repository": {
     "type": "git",
