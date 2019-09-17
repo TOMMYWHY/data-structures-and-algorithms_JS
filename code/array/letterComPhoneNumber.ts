@@ -1,4 +1,4 @@
-export default (str: string) => {
+ export default (str: string) => {
     let map: any = ['', 1, 'abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz'];
     let num: string[] = str.split("");
     let code: any = [];
@@ -9,8 +9,8 @@ export default (str: string) => {
     });
     let comb = (arr: any) => {
         let temp = [];
-        for (let i = 0, il = arr[0].length; i < il; i++) {
-            for (let j = 0, jl = arr[1].length; j < jl; j++) {
+        for (let i = 0; i < arr[0].length; i++) {
+            for (let j = 0; j < arr[1].length; j++) {
                 temp.push(`${arr[0][i]}${arr[1][j]}`)
             }
         }
@@ -20,8 +20,8 @@ export default (str: string) => {
         } else {
             return temp;
         }
-        return arr[0];
-    }
+        return arr[0];  
+    }  
     return comb(code);
 }  
 

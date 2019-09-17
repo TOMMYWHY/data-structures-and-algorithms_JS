@@ -11,8 +11,8 @@ exports.default = (function (str) {
     });
     var comb = function (arr) {
         var temp = [];
-        for (var i = 0, il = arr[0].length; i < il; i++) {
-            for (var j = 0, jl = arr[1].length; j < jl; j++) {
+        for (var i = 0; i < arr[0].length; i++) {
+            for (var j = 0; j < arr[1].length; j++) {
                 temp.push("" + arr[0][i] + arr[1][j]);
             }
         }
