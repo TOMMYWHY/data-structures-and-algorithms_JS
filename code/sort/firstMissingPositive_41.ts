@@ -26,8 +26,8 @@ function firstMissingPositive(arr: any[]) {
 
 }
 
-function sort( arr:any[]){
-    arr = arr.filter((item) => {
+function sort( arr:any[]){ 
+    arr = arr.filter((item) => { 
         return item > 0;
     })
     
