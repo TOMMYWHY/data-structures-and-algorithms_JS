@@ -19,6 +19,7 @@ function maximumGap(arr) {
         return 0;
     }
     var gap = 0;
+    var max = 0;
     for (var i = arr.length - 1; i > 0; i--) {
         for (var j = 0; j < i; j++) {
             // let temp_gap = 0;
@@ -29,9 +30,15 @@ function maximumGap(arr) {
                 arr[j + 1] = temp;
             }
         }
-        if (arr[i + 1] - arr[i] > gap) {
+        if (i < arr.length - 1) {
             gap = arr[i + 1] - arr[i];
+            if (gap > max) {
+                max = gap;
+            }
         }
+        // if (arr[i + 1] - arr[i] > gap) {
+        //     gap = arr[i + 1] - arr[i]
+        // } 
     }
-    return gap;
+    return Math.max(max, arr[1] - arr[0]);
 }

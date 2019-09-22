@@ -6,7 +6,7 @@ function reserveEachCharacter(str: string) {
     return result.join(' ') */
 
     return str.split(' ').map((item) => {
-        return item.split('').reverse().join('')
+        return item.split('').reverse().join('') 
     }).join(' ')
 }
 
