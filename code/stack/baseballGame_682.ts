@@ -20,7 +20,7 @@ function baseballGame(arr: any[]) {
                 pre2 = result.pop();
                 result.push(pre2,pre1,pre1+pre2)
                 break;
-
+ 
             default:
                 result.push(item*1)
                 break;
