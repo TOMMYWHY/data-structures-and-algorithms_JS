@@ -36,7 +36,7 @@ function maximalRectangle(arr: any) {
             }
         }
         if (start === undefined || end === undefined) {
-            if (n < 3) { //未交叉
+            if (n < 3) { //未交叉 
                 return false;
             } else {
                 width = top[0][1] - top[0][0] + 1

@@ -38,7 +38,7 @@ function maximalRectangle(arr) {
             }
         }
         if (start === undefined || end === undefined) {
-            if (n < 3) { //未交叉
+            if (n < 3) { //未交叉 
                 return false;
             }
             else {
